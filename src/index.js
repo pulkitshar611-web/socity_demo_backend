@@ -65,7 +65,7 @@ const server = http.createServer(app);
 initSocket(server);
 
 app.use(cors({
-  origin: ['https://socity.kiaantechnology.com', 'http://localhost:3000', 'http://localhost:3001', 'http://localhost:3002'],
+  origin: ['http://socity-demo.kiaantechnology.com', 'http://localhost:3000', 'http://localhost:3001', 'http://localhost:3002'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
